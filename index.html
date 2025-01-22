@@ -32,13 +32,21 @@
       <div class="container">
         <div class="hero-content text-center">
           <h1>WE LIKE TO <strong>MOVE</strong> THINGS</h1>
-          <div class="hero-cards-block">
-            <div class="row">
-              <div class="col-lg-4">
-                <div
-                  class="hero-card p-3"
-                  style="background-image: url(img/truck1.jpg)"
-                >
+        </div>
+      </div>
+    </section>
+
+    <div class="hero-cards-block">
+      <div class="container">
+        <div class="swiper-hero">
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div
+                class="hero-card p-3"
+                style="background-image: url(img/truck1.jpg)"
+              >
+                <div class="content">
                   <div class="hero-card-title text-start">Transport</div>
                   <div class="hero-cart-text text-start">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -47,11 +55,13 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4">
-                <div
-                  class="hero-card p-3"
-                  style="background-image: url(img/truck2.jpg)"
-                >
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="hero-card p-3"
+                style="background-image: url(img/truck1.jpg)"
+              >
+                <div class="content">
                   <div class="hero-card-title text-start">Transport</div>
                   <div class="hero-cart-text text-start">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -60,11 +70,13 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4">
-                <div
-                  class="hero-card p-3"
-                  style="background-image: url(img/truck1.jpg)"
-                >
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="hero-card p-3"
+                style="background-image: url(img/truck1.jpg)"
+              >
+                <div class="content">
                   <div class="hero-card-title text-start">Transport</div>
                   <div class="hero-cart-text text-start">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -77,7 +89,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
     <section class="section-offers">
       <div class="container text-center">
@@ -351,6 +363,23 @@
           disableOnInteraction: false,
         },
         spaceBetween: 10,
+      });
+    </script>
+    <script>
+      const swiperHero = new Swiper(".swiper-hero", {
+        direction: "horizontal", // Horizontalno pomeranje slajdova
+        loop: true, // Omogućava beskonačno pomeranje
+        slidesPerView: 3, // Prikazuje 3 slajda
+        autoplay: {
+          delay: 3000, // Automatsko pomeranje svakih 3 sekunde
+          disableOnInteraction: false, // Nastavlja autoplay čak i nakon interakcije
+        },
+        spaceBetween: 10, // Razmak između slajdova
+        breakpoints: {
+          1024: { slidesPerView: 3 }, // Prikazuje 3 slajda na ekranima većim od 1024px
+          768: { slidesPerView: 2 }, // Prikazuje 2 slajda na ekranima većim od 768px
+          480: { slidesPerView: 1 }, // Prikazuje 1 slajd na ekranima manjim od 480px
+        },
       });
     </script>
   </body>
