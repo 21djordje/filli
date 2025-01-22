@@ -3,21 +3,355 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
+    <title>Filli M Logistics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <!-- Hero -->
+    <section
+      class="hero-section d-flex justify-content-center align-items-center"
+      style="background-image: url(img/truck2.jpg)"
+    >
+      <div class="container">
+        <div class="hero-content text-center">
+          <h1>WE LIKE TO <strong>MOVE</strong> THINGS</h1>
+          <div class="hero-cards-block">
+            <div class="row">
+              <div class="col-lg-4">
+                <div
+                  class="hero-card p-3"
+                  style="background-image: url(img/truck1.jpg)"
+                >
+                  <div class="hero-card-title text-start">Transport</div>
+                  <div class="hero-cart-text text-start">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Vel maiores iste, blanditiis ullam quos quasi? Incidunt
+                    impedit distinctio modi mollitia!
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div
+                  class="hero-card p-3"
+                  style="background-image: url(img/truck2.jpg)"
+                >
+                  <div class="hero-card-title text-start">Transport</div>
+                  <div class="hero-cart-text text-start">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Vel maiores iste, blanditiis ullam quos quasi? Incidunt
+                    impedit distinctio modi mollitia!
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div
+                  class="hero-card p-3"
+                  style="background-image: url(img/truck1.jpg)"
+                >
+                  <div class="hero-card-title text-start">Transport</div>
+                  <div class="hero-cart-text text-start">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Vel maiores iste, blanditiis ullam quos quasi? Incidunt
+                    impedit distinctio modi mollitia!
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-offers">
+      <div class="container text-center">
+        <h2 class="text-center">OUR <strong>SERVICES</strong></h2>
+        <div class="services-block mt-5">
+          <div class="row gy-4">
+            <div class="col-lg-6">
+              <div class="service-card d-flex p-3 align-items-center">
+                <div class="service-icon">
+                  <img src="assets/truck-fast-solid.svg" alt="" />
+                </div>
+                <div class="service-desc">
+                  <div class="service-title">Transport</div>
+                  <div class="service-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aliquid eligendi suscipit ipsam at et placeat?
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="service-card d-flex p-3 align-items-center">
+                <div class="service-icon">
+                  <img src="assets/truck-fast-solid.svg" alt="" />
+                </div>
+                <div class="service-desc">
+                  <div class="service-title">Transport</div>
+                  <div class="service-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aliquid eligendi suscipit ipsam at et placeat?
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="service-card d-flex p-3 align-items-center">
+                <div class="service-icon">
+                  <img src="assets/truck-fast-solid.svg" alt="" />
+                </div>
+                <div class="service-desc">
+                  <div class="service-title">Transport</div>
+                  <div class="service-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aliquid eligendi suscipit ipsam at et placeat?
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="service-card d-flex p-3 align-items-center">
+                <div class="service-icon">
+                  <img src="assets/truck-fast-solid.svg" alt="" />
+                </div>
+                <div class="service-desc">
+                  <div class="service-title">Transport</div>
+                  <div class="service-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aliquid eligendi suscipit ipsam at et placeat?
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-about">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4 offset-md-2">
+            <div class="about-text-block">
+              <h2>ABOUT US</h2>
+              <div class="about-text">
+                <p>
+                  Filli M Logistics provides reliable transport, freight
+                  forwarding, and storage services between Serbia and the EU.
+                  With expertise in customs clearance, we ensure efficient and
+                  secure logistics solutions for your business needs. Contact
+                  us!
+                </p>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Labore quo suscipit debitis beatae! Aperiam ab voluptas
+                  tempora quas. Quas doloremque quae est ratione error
+                  repellendus itaque sed, velit provident at ipsum voluptatem
+                  molestiae sequi! Error facere quos temporibus, voluptas labore
+                  iste repellat ea dolorum possimus obcaecati vitae totam
+                  dolorem cum dolores itaque nam! Voluptates magnam accusamus
+                  odit natus magni neque?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="about-image">
+              <img src="img/truck1.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="section-contact text-center"
+      style="background-image: url(img/truck1.jpg)"
+    >
+      <div class="container">
+        <div class="content">
+          <h2 class="mb-5">CONTACT <strong>US</strong></h2>
+          <div class="contact-text">
+            <p>
+              We specialize in providing express delivery services between Italy
+              and Serbia, ensuring goods are transported swiftly and efficiently
+              within 24 hours of receiving your inquiry.
+            </p>
+          </div>
+          <div class="button-wrap">
+            <a class="btn btn-primary" href="index.html">CONTACT US</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-partners text-center">
+      <div class="container">
+        <h2>OUR <strong>PARTNERS</strong></h2>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <a href="index.html" target="_blank"
+                ><img src="assets/filli_logo.png" alt=""
+              /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="index.html" target="_blank"
+                ><img src="assets/filli_logo.png" alt=""
+              /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="index.html" target="_blank"
+                ><img src="assets/filli_logo.png" alt=""
+              /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="index.html" target="_blank"
+                ><img src="assets/filli_logo.png" alt=""
+              /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="index.html" target="_blank"
+                ><img src="assets/filli_logo.png" alt=""
+              /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="index.html" target="_blank"
+                ><img src="assets/filli_logo.png" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-location">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2829.7308302037936!2d20.357040899999998!3d44.827048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a65fee626df09%3A0x1feb47299063eea0!2zUHJla29ub3NrYSBVbGljYSAyLCDQkdC10L7Qs9GA0LDQtCwg0KHRgNCx0LjRmNCw!5e0!3m2!1ssr!2sba!4v1737546244004!5m2!1ssr!2sba"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-top">
+          <div class="row align-items-center">
+            <div class="col-lg-4">
+              <div class="footer-logo">
+                <a href="index.html"
+                  ><img src="assets/filli_logo.png" alt=""
+                /></a>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div
+                class="footer-contact d-flex align-items-center justify-content-center"
+              >
+                <div class="footer-contact-icon me-2">
+                  <img src="assets/phone-solid.svg" alt="" />
+                </div>
+                <div class="footer-contact-info d-flex flex-column">
+                  <a href="tel:+38162774334">+38162774334</a>
+                  <a href="tel:+381117346805">+381117346805</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div
+                class="footer-contact d-flex align-items-center justify-content-end"
+              >
+                <div class="footer-contact-icon me-2">
+                  <img src="assets/envelope-solid.svg" alt="" />
+                </div>
+                <div class="footer-contact-info d-flex flex-column">
+                  <a href="mailto:nikolamitrovic@fillim.rs"
+                    >nikolamitrovic@fillim.rs</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-main">
+          <div class="row">
+            <div class="col-lg-4">
+              <h5>Social Networks</h5>
+              <div class="footer-text">
+                Stay connected and be the first to know about our latest
+                updates, events, and behind-the-scenes moments! Follow us on
+                social media and join the conversation. Don’t miss out – hit
+                that follow button!
+              </div>
+              <div class="social-wrap mt-3">
+                <a
+                  target="_blank"
+                  href="https://www.facebook.com/people/FILLI-M-Logistics/61553776100983/?sk=about"
+                  ><img src="assets/facebook-brands-solid.svg" alt=""
+                /></a>
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/fillimlogistics/"
+                  ><img src="assets/instagram-brands-solid.svg" alt=""
+                /></a>
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/nikola-mitrovic-fillim/overlay/contact-info/"
+                  ><img src="assets/linkedin-brands-solid.svg" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright text-center">
+          Copyrights © Filli M Logistics
+        </div>
+      </div>
+    </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        direction: "horizontal",
+        loop: true,
+        slidesPerView: 5,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        spaceBetween: 10,
+      });
+    </script>
   </body>
 </html>
