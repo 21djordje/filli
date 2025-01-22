@@ -179,10 +179,12 @@ h2::after {
   font-size: 24px;
   color: var(--red);
   font-weight: 700;
+  text-align: start;
 }
 
 .service-text {
   color: var(--black);
+  text-align: start;
 }
 
 /********************************
@@ -352,4 +354,29 @@ footer {
 .footer-copyright {
   padding-top: 15px;
   color: var(--grey);
+}
+
+/************************************************
+                RESPONSIVE
+************************************************/
+
+@media (max-width: 1399.98px) {
+}
+
+@media (max-width: 1199.98px) {
+}
+
+@media (max-width: 991.98px) {
+}
+
+@media (max-width: 767.98px) {
+}
+
+@media (max-width: 575.98px) {
+}
+
+@media (max-width: 370px) {
+}
+
+@media (max-width: 320px) {
 }
