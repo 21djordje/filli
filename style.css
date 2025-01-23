@@ -64,6 +64,142 @@ h2::after {
 }
 
 /********************************
+          NAVBAR
+********************************/
+
+.navbar-brand img {
+  height: 90px;
+  width: auto;
+}
+
+.nav-link {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  text-decoration: none;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.nav-link:last-child {
+  margin-right: 0px;
+}
+
+.nav-link:hover {
+  color: var(--red);
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--red);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.social-menu a img {
+  height: 30px;
+  width: auto;
+  transition: all 0.3 ease;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%)
+    hue-rotate(264deg) brightness(102%) contrast(102%);
+}
+
+.social-menu a img:hover {
+  filter: brightness(0) saturate(100%) invert(11%) sepia(100%) saturate(7059%)
+    hue-rotate(354deg) brightness(97%) contrast(102%);
+}
+
+.social-menu {
+  margin-left: auto;
+}
+
+.social-menu ul {
+  list-style: none;
+  display: flex;
+}
+
+.social-menu ul li {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#navbar {
+  transition: all 0.3s ease-in-out;
+}
+
+.scrolled {
+  background-color: rgba(44, 55, 65, 0.7);
+  box-shadow: 0px 4px 6px rgba(44, 55, 65, 0.1);
+}
+
+.nav-contact.nav-link {
+  background-color: var(--red);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.nav-contact.nav-link:hover {
+  color: var(--red);
+  background-color: #ffffff;
+}
+
+.navbar-toggler-icon {
+  background-image: url(assets/bars.svg);
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.offcanvas {
+  background-color: rgba(44, 55, 65, 0.7);
+  box-shadow: -10px 0px 10px 1px rgba(44, 55, 65, 0.1);
+}
+
+.offcanvas-header img {
+  height: 60px;
+  width: auto;
+}
+
+.offcanvas .nav-link {
+  text-align: center;
+  padding: 10px;
+  padding-bottom: 10px;
+  font-size: 22px;
+  display: inline-block;
+}
+
+.offcanvas .navbar-nav {
+  text-align: center;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.offcanvas .social-menu ul {
+  padding-left: 0px;
+}
+
+.offcanvas .social-menu {
+  padding-top: 30px;
+  margin: 0;
+}
+
+/********************************
            HERO
 ********************************/
 
@@ -72,11 +208,25 @@ h2::after {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
+}
+
+.hero-section::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(44, 55, 65, 0.3);
 }
 
 .hero-content {
   position: relative;
   height: 100%;
+  z-index: 2;
 }
 
 .hero-section h1 strong {
@@ -381,6 +531,13 @@ footer {
   .section-location iframe {
     height: 350px;
   }
+  .navbar-brand img {
+    height: 70px;
+  }
+  .nav-link {
+    font-size: 18px;
+    padding: 7px;
+  }
 }
 
 @media (max-width: 1199.98px) {
@@ -410,6 +567,13 @@ footer {
   .section-contact {
     padding-top: 35px;
     padding-bottom: 35px;
+  }
+  .navbar-brand img {
+    height: 60px;
+  }
+  .nav-link {
+    font-size: 16px;
+    padding: 5px;
   }
 }
 

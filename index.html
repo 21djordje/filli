@@ -25,10 +25,131 @@
     <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
   </head>
   <body>
-    <!-- Hero -->
+    <div class="navigation-block">
+      <nav class="navbar fixed-top" id="navbar">
+        <div class="container">
+          <a class="navbar-brand" href="#"
+            ><img src="assets/filli_logo.png" alt=""
+          /></a>
+          <button
+            class="navbar-toggler d-lg-none"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Offcanvas menu for smaller screens -->
+          <div
+            class="offcanvas offcanvas-end d-lg-none"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header d-flex">
+              <a href="index.html"
+                ><img src="assets/filli_logo.png" alt=""
+              /></a>
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" href="#services">Our Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#partners">Our Partners</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-contact nav-link" href="">Contact Us</a>
+                </li>
+              </ul>
+              <div class="social-menu d-flex justify-content-center">
+                <ul>
+                  <li>
+                    <a
+                      target="_blank"
+                      href="https://www.facebook.com/people/FILLI-M-Logistics/61553776100983/?sk=about"
+                      ><img src="assets/facebook-brands-solid.svg" alt=""
+                    /></a>
+                  </li>
+                  <li>
+                    <a
+                      target="_blank"
+                      href="https://www.instagram.com/fillimlogistics/"
+                      ><img src="assets/instagram-brands-solid.svg" alt=""
+                    /></a>
+                  </li>
+                  <li>
+                    <a
+                      target="_blank"
+                      href="https://www.linkedin.com/in/nikola-mitrovic-fillim/overlay/contact-info/"
+                      ><img src="assets/linkedin-brands-solid.svg" alt=""
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Normal navbar for lg and larger screens -->
+          <div class="d-none d-lg-flex flex-grow-1 justify-content-center">
+            <ul class="navbar-nav flex-row">
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Our Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#partners">Our Partners</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-contact nav-link" href="">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="social-menu d-none d-lg-flex">
+            <ul>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.facebook.com/people/FILLI-M-Logistics/61553776100983/?sk=about"
+                  ><img src="assets/facebook-brands-solid.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/fillimlogistics/"
+                  ><img src="assets/instagram-brands-solid.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/nikola-mitrovic-fillim/overlay/contact-info/"
+                  ><img src="assets/linkedin-brands-solid.svg" alt=""
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
     <section
       class="hero-section d-flex justify-content-center align-items-center"
-      style="background-image: url(img/truck2.jpg)"
+      style="background-image: url(img/truck1.jpg)"
     >
       <div class="container">
         <div class="hero-content text-center">
@@ -94,7 +215,7 @@
       </div>
     </div>
 
-    <section class="section-offers">
+    <section class="section-offers" id="services">
       <div class="container text-center">
         <h2 class="text-center mb-5">OUR <strong>SERVICES</strong></h2>
         <div class="services-block">
@@ -174,7 +295,7 @@
       </div>
     </section>
 
-    <section class="section-about">
+    <section class="section-about" id="about">
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-4 offset-lg-2 col-10 offset-1">
@@ -231,7 +352,7 @@
       </div>
     </section>
 
-    <section class="section-partners text-center">
+    <section class="section-partners text-center" id="partners">
       <div class="container">
         <h2 class="mb-5">OUR <strong>PARTNERS</strong></h2>
         <div class="swiper">
@@ -407,6 +528,29 @@
     </script>
     <script>
       AOS.init();
+    </script>
+    <script>
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById("navbar").style.top = "0";
+        } else {
+          document.getElementById("navbar").style.top = "-150px";
+        }
+        prevScrollpos = currentScrollPos;
+      };
+    </script>
+    <script>
+      window.addEventListener("scroll", function () {
+        const navbar = document.getElementById("navbar");
+
+        if (window.scrollY > 0) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
     </script>
   </body>
 </html>
