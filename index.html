@@ -96,8 +96,8 @@
 
     <section class="section-offers">
       <div class="container text-center">
-        <h2 class="text-center">OUR <strong>SERVICES</strong></h2>
-        <div class="services-block mt-5">
+        <h2 class="text-center mb-5">OUR <strong>SERVICES</strong></h2>
+        <div class="services-block">
           <div class="row gy-4">
             <div class="col-lg-6">
               <div
@@ -111,7 +111,7 @@
                   <div class="service-title">Transport</div>
                   <div class="service-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Aliquid eligendi suscipit ipsam at et placeat?
+                    Aliquid eligendi.
                   </div>
                 </div>
               </div>
@@ -145,7 +145,9 @@
                   <div class="service-title">Transport</div>
                   <div class="service-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Aliquid eligendi suscipit ipsam at et placeat?
+                    Aliquid eligendi suscipit ipsam at et placeat?Lorem ipsum
+                    dolor sit amet.Lorem ipsum dolor sit ametLorem ipsum dolor
+                    sit amet.
                   </div>
                 </div>
               </div>
@@ -175,9 +177,9 @@
     <section class="section-about">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-4 offset-md-2">
+          <div class="col-lg-4 offset-lg-2 col-10 offset-1">
             <div class="about-text-block">
-              <h2>ABOUT US</h2>
+              <h2 class="mb-5">ABOUT US</h2>
               <div class="about-text">
                 <p>
                   Filli M Logistics provides reliable transport, freight
@@ -199,7 +201,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 d-none d-lg-flex">
             <div class="about-image">
               <img src="img/truck1.jpg" alt="" />
             </div>
@@ -231,7 +233,7 @@
 
     <section class="section-partners text-center">
       <div class="container">
-        <h2>OUR <strong>PARTNERS</strong></h2>
+        <h2 class="mb-5">OUR <strong>PARTNERS</strong></h2>
         <div class="swiper">
           <div class="swiper-wrapper">
             <!-- Slides -->
@@ -284,16 +286,16 @@
       <div class="container">
         <div class="footer-top">
           <div class="row align-items-center">
-            <div class="col-lg-4">
+            <div class="col-md-4">
               <div class="footer-logo">
                 <a href="index.html"
                   ><img src="assets/filli_logo.png" alt=""
                 /></a>
               </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-md-4 col-sm-6 col-12 mb-3 mb-sm-0">
               <div
-                class="footer-contact d-flex align-items-center justify-content-center"
+                class="footer-contact d-flex align-items-center justify-content-lg-center"
               >
                 <div class="footer-contact-icon me-2">
                   <img src="assets/phone-solid.svg" alt="" />
@@ -304,9 +306,9 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-md-4 col-sm-6 col-12">
               <div
-                class="footer-contact d-flex align-items-center justify-content-end"
+                class="footer-contact d-flex align-items-center justify-content-lg-end"
               >
                 <div class="footer-contact-icon me-2">
                   <img src="assets/envelope-solid.svg" alt="" />
@@ -373,28 +375,33 @@
       const swiper = new Swiper(".swiper", {
         direction: "horizontal",
         loop: true,
-        slidesPerView: 5,
+        slidesPerView: 2,
         autoplay: {
           delay: 3000,
           disableOnInteraction: false,
         },
         spaceBetween: 10,
+        breakpoints: {
+          1024: { slidesPerView: 5 },
+          768: { slidesPerView: 4 },
+          480: { slidesPerView: 3 },
+        },
       });
     </script>
     <script>
       const swiperHero = new Swiper(".swiper-hero", {
-        direction: "horizontal", // Horizontalno pomeranje slajdova
-        loop: true, // Omogućava beskonačno pomeranje
-        slidesPerView: 3, // Prikazuje 3 slajda
+        direction: "horizontal",
+        loop: true,
+        slidesPerView: 1,
         autoplay: {
-          delay: 3000, // Automatsko pomeranje svakih 3 sekunde
-          disableOnInteraction: false, // Nastavlja autoplay čak i nakon interakcije
+          delay: 3000,
+          disableOnInteraction: false,
         },
-        spaceBetween: 10, // Razmak između slajdova
+        spaceBetween: 10,
         breakpoints: {
-          1024: { slidesPerView: 3 }, // Prikazuje 3 slajda na ekranima većim od 1024px
-          768: { slidesPerView: 2 }, // Prikazuje 2 slajda na ekranima većim od 768px
-          480: { slidesPerView: 1 }, // Prikazuje 1 slajd na ekranima manjim od 480px
+          1024: { slidesPerView: 3 },
+          768: { slidesPerView: 2 },
+          480: { slidesPerView: 1 },
         },
       });
     </script>
