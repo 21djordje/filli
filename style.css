@@ -152,6 +152,7 @@ h2::after {
 .nav-contact.nav-link:hover {
   color: var(--red);
   background-color: #ffffff;
+  cursor: pointer;
 }
 
 .navbar-toggler-icon {
@@ -504,6 +505,18 @@ footer {
 .footer-copyright {
   padding-top: 15px;
   color: var(--grey);
+}
+
+/********************************
+          Modal
+********************************/
+
+.modal {
+  background-color: rgba(44, 55, 65, 0.3);
+}
+
+.modal-content {
+  background-color: var(--dark-blue);
 }
 
 /************************************************
