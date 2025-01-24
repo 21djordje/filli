@@ -694,9 +694,6 @@ footer {
     margin-bottom: 20px;
     text-align: center;
   }
-  .footer-contact {
-    justify-content: center;
-  }
 }
 
 @media (max-width: 575.98px) {
