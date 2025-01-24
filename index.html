@@ -486,6 +486,27 @@
                 /></a>
               </div>
             </div>
+            <div class="col-lg-2 offset-lg-1 mb-3 mt-5 my-lg-0">
+              <div class="footer-menu">
+                <h5>Quick Links</h5>
+                <ul>
+                  <li><a href="#services">Our Service</a></li>
+                  <li><a href="#about">About Us</a></li>
+                  <li><a href="#partners">Our partners</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-2 mb-3 mb-lg-0">
+              <div class="footer-menu">
+                <h5>Our Services</h5>
+                <ul>
+                  <li><a href="#services">Our Service</a></li>
+                  <li><a href="#about">About Us</a></li>
+                  <li><a href="#partners">Our partners</a></li>
+                  <li><a href="#partners">Our partners</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
         <div class="footer-copyright text-center">
@@ -513,27 +534,66 @@
             ></button>
           </div>
           <div class="modal-body">
-            <div class="form-floating mb-3">
-              <input
-                type="email"
-                class="form-control"
-                id="floatingInput"
-                placeholder="name@example.com"
-              />
-              <label for="floatingInput">Email address</label>
-            </div>
-            <div class="form-floating">
-              <input
-                type="password"
-                class="form-control"
-                id="floatingPassword"
-                placeholder="Password"
-              />
-              <label for="floatingPassword">Password</label>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary">SEND</button>
+            <form>
+              <div class="mb-3">
+                <label for="fullName" class="form-label">Full Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="fullName"
+                  placeholder="Enter your full name"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="company" class="form-label">Company</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="company"
+                  placeholder="Enter your company name"
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="email" class="form-label">Email Address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="phone"
+                  placeholder="Enter your phone number"
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="4"
+                  placeholder="Write your message here"
+                  required
+                ></textarea>
+              </div>
+
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary w-100">
+                  Send Message
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </div>

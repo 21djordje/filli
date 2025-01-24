@@ -10,6 +10,10 @@ body {
   color: #ffffff;
 }
 
+* {
+  transition: all 0.3s ease;
+}
+
 h1 {
   font-size: 80px;
   font-weight: 700;
@@ -317,9 +321,27 @@ h2::after {
 }
 
 .service-card {
-  background-color: var(--grey);
+  background-color: #fcfcfc;
   border-radius: 8px;
   height: 100%;
+  transition: all 0.3s ease-in;
+  box-shadow: 0px 8px 16px rgba(255, 255, 255, 0.4);
+}
+
+.service-card:hover {
+  background-color: #fa0311;
+  cursor: pointer;
+  box-shadow: 0px 8px 16px rgba(250, 3, 17, 0.4);
+}
+
+.service-card:hover .service-title,
+.service-card:hover .service-text {
+  color: #ffffff;
+}
+
+.service-card:hover .service-icon img {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(12%)
+    hue-rotate(244deg) brightness(103%) contrast(106%);
 }
 
 .service-icon img {
@@ -477,14 +499,18 @@ footer {
   font-size: 18px;
 }
 
+.footer-contact-info a:hover {
+  color: var(--red);
+}
+
 .footer-top {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  padding-bottom: 15px;
+  padding-bottom: 30px;
 }
 
 .footer-main {
   padding-top: 30px;
   padding-bottom: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -507,6 +533,25 @@ footer {
   color: var(--grey);
 }
 
+.footer-menu ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.footer-menu ul li {
+  margin-bottom: 5px;
+}
+
+.footer-menu ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer-menu ul li a:hover {
+  color: var(--red);
+}
+
 /********************************
           Modal
 ********************************/
@@ -517,6 +562,11 @@ footer {
 
 .modal-content {
   background-color: var(--dark-blue);
+}
+
+.form-control:focus {
+  border: none;
+  box-shadow: 0 0 0 0.25rem rgba(250, 3, 17, 0.25);
 }
 
 /************************************************
